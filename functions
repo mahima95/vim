@@ -1,0 +1,66 @@
+#!/bin/bash
+
+getDate()
+{
+date
+}
+
+getDate
+
+name="Mahima"
+
+demLocal(){
+ local name="Paul"
+ return
+ }
+
+ demLocal
+
+ echo "$name"
+
+ getSum(){
+
+local num3=$1
+local num4=$2
+
+local sum=$((num3+num4))
+
+echo $sum
+
+ }
+
+num22=5
+num2=6
+
+sum=$(getSum num1 num2)
+echo "The sume is $sum"
+
+read -p "What is your name?" name
+
+echo "Hello $name"
+
+read -p "What is your age?" age
+
+if [ $age -ge 16 ] #greater than or equal to
+then
+	echo "You can drive"
+elif [$age -eq 15] #equal to
+then
+	echo "You can drive next year"
+else 
+	echo "You cannot drive"
+fi
+
+#eq ne ge le lt gt
+
+read -p "Enter numer" num
+
+if((num ==10)); then #Semi colon if you want to use the symbols
+echo "Your num equals 10"
+fi
+
+if((num>10)); then 
+echo "It is greater than 10"
+fi
+
+
