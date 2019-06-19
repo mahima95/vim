@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#Runs using bash insetad of shell sh
+# Comment
+
+echo "Hello World"
+
+myName="Mahima" #No white spaces allowed and vim treats everything as strings
+
+declare -r NUM1=5  #CONSTANT
+
+num2=4
+
+num3=2 
+
+num5=$((NUM1+num2))
+num33=$((NUM1-num2))
+nnum=$((NUM1/num2))
+ num55=$((NUM1*num2))
+
+ echo "5+4 = $num5" 
+
+ echo $((5**2)) #Raise to
+ echo $((5%4))
+
+ rand=3
+
+ let rand+=4
+
+ echo "$rand"
+
+ echo "rand++ =$((rand++))"
+ 
+ num9=1.2
+
+ num9=$(python -c "print $num9 +$num33")
+#Python commands
+
+ echo $num9
+
+ cat<< END
+ This test prints 
+ on many lines
+ END #You can print anyhow
+
+
